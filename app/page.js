@@ -19,6 +19,7 @@ function Header(){
     <div className="top-head">
       <Link href="/" className="brand"><span>JAKWO</span><b>ARENA ADS</b></Link>
       <div className="top-actions">
+        <a className="btn tan" href="https://pump.fun/coin/EgarvX6JFtcqmjXw5aAvk9yTLa3CnwNmdbwAmwPNpump" target="_blank">💊</a>
         <button className="btn black" onClick={()=>window.dispatchEvent(new Event('connect-wallet'))}>CONNECT</button>
         <a className="btn tan" href={TWITTER} target="_blank">X</a>
         <a className="btn tan" href={TELEGRAM} target="_blank">TG</a>
