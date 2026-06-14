@@ -42,3 +42,35 @@
   .pump-direct-link,.pump-link{height:30px !important;min-width:36px !important;padding:0 3px !important;border-radius:9px !important;box-shadow:2px 2px 0 #261405 !important;}
   .pump-direct-link img,.pump-link img{height:25px !important;max-width:34px !important;}
 }
+
+
+/* JAKWO Pump.fun capsule button - add only */
+.jakwo-pump-exact{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:50px!important;
+  height:36px!important;
+  padding:2px 5px!important;
+  border:2px solid #2a1206!important;
+  border-radius:12px!important;
+  background:#fff4df!important;
+  box-shadow:3px 3px 0 #261405!important;
+  text-decoration:none!important;
+  cursor:pointer!important;
+  pointer-events:auto!important;
+  z-index:999999!important;
+  flex:0 0 auto!important;
+}
+.jakwo-pump-exact img{
+  display:block!important;
+  height:30px!important;
+  width:auto!important;
+  max-width:42px!important;
+  object-fit:contain!important;
+  pointer-events:none!important;
+}
+@media(max-width:800px){
+  .jakwo-pump-exact{width:40px!important;height:30px!important;padding:1px 3px!important;border-radius:9px!important;box-shadow:2px 2px 0 #261405!important;}
+  .jakwo-pump-exact img{height:25px!important;max-width:34px!important;}
+}

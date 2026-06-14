@@ -8,6 +8,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return <html lang="en"><body>{children}<script dangerouslySetInnerHTML={{__html: `(function(){
   var URL='https://pump.fun/coin/EgarvX6JFtcqmjXw5aAvk9yTLa3CnwNmdbwAmwPNpump';
+  function ensurePump(){
+    var existing=document.querySelector('.jakwo-pump-exact');
+    if(existing){ existing.href=URL; existing.target='_blank'; existing.rel='noopener noreferrer'; return; }
+    var actions=document.querySelector('.top-actions') || document.querySelector('.upload-head > div') || document.querySelector('header .flex.items-center.gap-3') || document.querySelector('header nav') || document.querySelector('header');
+    if(!actions) return;
+    var a=document.createElement('a');
+    a.href=URL; a.target='_blank'; a.rel='noopener noreferrer';
+    a.className='jakwo-pump-exact';
+    a.setAttribute('aria-label','Open JAKWO on Pump.fun');
+    a.innerHTML='<img src="/pump-pill.jpg" alt="Pump.fun JAKWO">';
+    actions.insertBefore(a, actions.firstChild);
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', ensurePump); else ensurePump();
+  setTimeout(ensurePump,500); setTimeout(ensurePump,1500);
+})();`}} /><script dangerouslySetInnerHTML={{__html: `(function(){
+  var URL='https://pump.fun/coin/EgarvX6JFtcqmjXw5aAvk9yTLa3CnwNmdbwAmwPNpump';
   function installPump(){
     var existing=document.querySelector('a[data-jakwo-pump], a.pump-link');
     if(existing){
