@@ -74,3 +74,8 @@
   .jakwo-pump-exact{width:40px!important;height:30px!important;padding:1px 3px!important;border-radius:9px!important;box-shadow:2px 2px 0 #261405!important;}
   .jakwo-pump-exact img{height:25px!important;max-width:34px!important;}
 }
+
+/* FORCE visible Pump.fun capsule button - ADD ONLY */
+a.jakwo-pump-exact,a[data-jakwo-pump]{display:inline-flex!important;align-items:center!important;justify-content:center!important;width:48px!important;height:34px!important;padding:2px 4px!important;border:2px solid #2a1206!important;border-radius:12px!important;background:#fff4df!important;box-shadow:3px 3px 0 #261405!important;cursor:pointer!important;pointer-events:auto!important;z-index:999999!important;visibility:visible!important;opacity:1!important;flex:0 0 auto!important;margin:0 4px!important;}
+a.jakwo-pump-exact img,a[data-jakwo-pump] img{display:block!important;height:28px!important;width:auto!important;max-width:40px!important;object-fit:contain!important;pointer-events:none!important;}
+@media(max-width:800px){a.jakwo-pump-exact,a[data-jakwo-pump]{width:38px!important;height:28px!important;padding:1px 3px!important;margin:0 3px!important}a.jakwo-pump-exact img,a[data-jakwo-pump] img{height:23px!important;max-width:32px!important}}
