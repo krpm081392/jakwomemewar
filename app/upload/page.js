@@ -47,7 +47,7 @@ export default function Upload(){
   }
   const adStyle={left:`${(pos.x/4000)*100}%`,top:`${(pos.y/2600)*100}%`,width:`${(size.w/4000)*100}%`,height:`${(size.h/2600)*100}%`};
   return <main className="upload-page">
-    <div className="upload-head"><Link href="/" className="brand"><span>JAKWO</span><b>WAR ARENA</b></Link><div><button className="btn phantom" onClick={connect}>{wallet?'CONNECTED':'CONNECT PHANTOM'}</button><button className="btn red" onClick={()=>setPanel(!panel)}>ADD AD</button></div></div>
+    <div className="upload-head"><Link href="/" className="brand"><span>JAKWO</span><b>WAR ARENA</b></Link><div><a className="pump-link" href="https://pump.fun/coin/EgarvX6JFtcqmjXw5aAvk9yTLa3CnwNmdbwAmwPNpump" target="_blank" rel="noopener noreferrer" aria-label="Open JAKWO on Pump.fun"><img src="/pump-capsule.jpg" alt="JAKWO Pump.fun"/></a><button className="btn phantom" onClick={connect}>{wallet?'CONNECTED':'CONNECT PHANTOM'}</button><button className="btn red" onClick={()=>setPanel(!panel)}>ADD AD</button></div></div>
     <div className="arena-canvas" ref={arenaRef} onMouseMove={drag?pointer:undefined} onMouseUp={()=>setDrag(false)} onTouchMove={drag?pointer:undefined} onTouchEnd={()=>setDrag(false)}>
       {preview && <div className="draft-ad" style={adStyle} onMouseDown={(e)=>{e.preventDefault();setDrag(true);pointer(e)}} onTouchStart={(e)=>{setDrag(true);pointer(e)}}><img src={preview}/><button className="draft-x" onClick={(e)=>{e.stopPropagation();setFile(null);setPreview('')}}>×</button><i /></div>}
     </div>
