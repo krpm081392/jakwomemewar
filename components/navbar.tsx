@@ -32,6 +32,15 @@ export function Navbar() {
           {/* Social & CTA */}
           <div className="flex items-center gap-3">
             <a
+              href="https://pump.fun/coin/EgarvX6JFtcqmjXw5aAvk9yTLa3CnwNmdbwAmwPNpump"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pump-link"
+              aria-label="Buy JAKWO on Pump.fun"
+            >
+              <img src="/pump-pill.jpg" alt="Pump.fun JAKWO" />
+            </a>
+            <a
               href="https://x.com/jakw0o"
               target="_blank"
               rel="noopener noreferrer"

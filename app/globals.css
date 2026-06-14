@@ -4,8 +4,8 @@
 }
 @media(min-width:901px){.float-panel{right:26px}.arena-home{min-height:calc(100vh - 170px)}}
 
-/* ADD-ONLY Pump.fun capsule link */
-.pump-link{display:inline-flex;align-items:center;justify-content:center;height:44px;min-width:54px;padding:0 6px;border:3px solid #090603;box-shadow:5px 5px 0 #261405;background:#fff7df;color:#120900;transform:rotate(-8deg);cursor:pointer}
-.pump-link img{display:block;height:38px;width:auto;max-width:62px;object-fit:contain;pointer-events:none}
-.pump-link:hover{filter:brightness(1.08);transform:rotate(-8deg) scale(1.04)}
-@media(max-width:900px){.pump-link{height:38px;min-width:42px;padding:0 4px;box-shadow:3px 3px 0 #261405;border-width:2px}.pump-link img{height:32px;max-width:48px}}
+
+/* Pump.fun capsule link - add only */
+.pump-link{display:inline-flex;align-items:center;justify-content:center;height:42px;min-width:58px;padding:2px 6px;border:2px solid #2a1206;border-radius:12px;background:#fff4df;box-shadow:3px 3px 0 #261405;text-decoration:none;vertical-align:middle;cursor:pointer;flex:0 0 auto}
+.pump-link img{display:block;height:32px;width:auto;max-width:54px;object-fit:contain}
+@media (max-width:800px){.pump-link{height:34px;min-width:42px;padding:1px 4px;border-radius:10px;box-shadow:2px 2px 0 #261405}.pump-link img{height:28px;max-width:40px}}
