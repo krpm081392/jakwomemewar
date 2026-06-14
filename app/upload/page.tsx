@@ -81,7 +81,7 @@ export default function Upload(){
   }catch(e:any){setStatus(`Publish error: ${e.message}`)} finally{setBusy(false)}
  }
  return <main className="white-page">
-  <header className="p-5 flex justify-between items-center border-b"><div className="flex items-center gap-3"><Link href="/" className="font-black text-2xl">← JAKWO</Link><a className="pump-link" href="https://pump.fun/coin/EgarvX6JFtcqmjXw5aAvk9yTLa3CnwNmdbwAmwPNpump" target="_blank" rel="noopener noreferrer" aria-label="Buy JAKWO on Pump.fun"><img src="/pump-pill.jpg" alt="Pump.fun JAKWO"/></a></div><b>Upload War Ad</b></header>
+  <header className="p-5 flex justify-between items-center border-b"><div className="flex items-center gap-3"><Link href="/" className="font-black text-2xl">← JAKWO</Link><a className="pump-link" data-jakwo-pump-direct="1" href="https://pump.fun/coin/EgarvX6JFtcqmjXw5aAvk9yTLa3CnwNmdbwAmwPNpump" target="_blank" rel="noopener noreferrer" aria-label="Buy JAKWO on Pump.fun"><img src="/pill.png" alt="Pump.fun JAKWO"/></a></div><b>Upload War Ad</b></header>
   <section className="max-w-6xl mx-auto p-4 grid lg:grid-cols-[380px_1fr] gap-6">
    <div className="space-y-4">
     <h1 className="text-4xl font-black">Place Your War Photo</h1>
