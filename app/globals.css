@@ -10,7 +10,35 @@
 .pump-link img{display:block;height:32px;width:auto;max-width:54px;object-fit:contain}
 @media (max-width:800px){.pump-link{height:34px;min-width:42px;padding:1px 4px;border-radius:10px;box-shadow:2px 2px 0 #261405}.pump-link img{height:28px;max-width:40px}}
 
-/* Pump.fun capsule direct link - ADD ONLY */
-.pump-link,.jakwo-pump-direct{display:inline-flex!important;align-items:center!important;justify-content:center!important;height:38px!important;min-width:48px!important;padding:2px 5px!important;border:2px solid #2a1206!important;border-radius:12px!important;background:#fff4df!important;box-shadow:3px 3px 0 #261405!important;text-decoration:none!important;vertical-align:middle!important;cursor:pointer!important;flex:0 0 auto!important;position:relative!important;z-index:9999!important;pointer-events:auto!important}
-.pump-link img,.jakwo-pump-direct img{display:block!important;height:30px!important;width:auto!important;max-width:44px!important;object-fit:contain!important;pointer-events:none!important}
-@media(max-width:800px){.pump-link,.jakwo-pump-direct{height:32px!important;min-width:38px!important;padding:1px 3px!important;border-radius:10px!important;box-shadow:2px 2px 0 #261405!important}.pump-link img,.jakwo-pump-direct img{height:25px!important;max-width:34px!important}}
+
+/* ADD ONLY: Pump.fun capsule button in header */
+.pump-direct-link,
+.pump-link{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  height:38px !important;
+  min-width:48px !important;
+  padding:1px 4px !important;
+  border:2px solid #2a1206 !important;
+  border-radius:12px !important;
+  background:#fff4df !important;
+  box-shadow:3px 3px 0 #261405 !important;
+  text-decoration:none !important;
+  cursor:pointer !important;
+  pointer-events:auto !important;
+  z-index:999999 !important;
+  flex:0 0 auto !important;
+}
+.pump-direct-link img,
+.pump-link img{
+  display:block !important;
+  height:31px !important;
+  width:auto !important;
+  max-width:45px !important;
+  object-fit:contain !important;
+}
+@media(max-width:800px){
+  .pump-direct-link,.pump-link{height:30px !important;min-width:36px !important;padding:0 3px !important;border-radius:9px !important;box-shadow:2px 2px 0 #261405 !important;}
+  .pump-direct-link img,.pump-link img{height:25px !important;max-width:34px !important;}
+}
